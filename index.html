@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réservation d'heures de jeu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #212121;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #e65100;
+    }
+    .booking-slot {
+      border: 1px solid #e65100;
+      background-color: #333;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+    input[type="text"], input[type="email"] {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: none;
+      background-color: #555;
+      color: #fff;
+    }
+    input[type="text"]::placeholder, input[type="email"]::placeholder {
+      color: #ccc;
+    }
+    input[type="submit"] {
+      background-color: #e65100;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    input[type="submit"]:hover {
+      background-color: #ff7043;
+    }
+    .booking-icon {
+      color: #e65100;
+      font-size: 24px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Réservation d'heures de jeu</h1>
+
+    <!-- Plages horaires de réservation -->
+    <div class="booking-slot">
+      <h2><i class="fas fa-clock booking-icon"></i>16:00 - 17:00</h2>
+      <form action="#">
+        <input type="text" placeholder="Nom de l'équipe">
+        <input type="email" placeholder="Votre e-mail Gmail">
+        <input type="submit" value="Réserver">
+      </form>
+    </div>
+
+    <div class="booking-slot">
+      <h2><i class="fas fa-clock booking-icon"></i>17:00 - 18:00</h2>
+      <form action="#">
+        <input type="text" placeholder="Nom de l'équipe">
+        <input type="email" placeholder="Votre e-mail Gmail">
+        <input type="submit" value="Réserver">
+      </form>
+    </div>
+
+    <!-- Ajouter d'autres plages horaires ici -->
+
+  </div>
+</body>
+</html>
